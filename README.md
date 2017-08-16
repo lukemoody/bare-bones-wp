@@ -1,9 +1,26 @@
-# bare-bones-wp
-Blank theme for bespoke WordPress developments with my front-end boilerplate.
+# README #
 
-- WordPress
-- Grunt
-- Sass
-- FontAwesome
-- jQuery 1.12.4
-- TweenMax
+This README documents the requirements for bare-bones boilerplate, created by Luke Moody (LMWD)
+
+### What is this repository for? ###
+
+Boilerplate for bespoke front-end developments.
+
+* bare-bones
+* Version 2.0.2
+* https://lukemoody.co.uk
+
+### What's being used? ###
+
+* Node.js
+* Bower
+* Grunt
+* TweenMax
+* Font Awesome
+* jQuery
+* Sass
+
+### Who do I talk to? ###
+
+* LMWD
+* Luke Moody - hello@lukemoody.co.uk

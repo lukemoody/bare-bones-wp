@@ -21,7 +21,7 @@
     <div class="container">
       <div class="row">
         <div class="grid-xs-12 grid-sm-12 grid-md-12">
-          <img src="<?php echo get_site_url(); ?>/wp-content/themes/bare_bones/includes/assets/logo/logo.png" alt="Fabric created by Luke Moody | Mooke Creative" width="100px" style="margin: 20px 0" />
+          <img src="<?php echo get_site_url(); ?>/wp-content/themes/bare-bones-wp/includes/assets/logo/logo.png" alt="Created by Luke Moody | Mooke Creative" width="100px" style="margin: 20px 0" />
         </div>
       </div>
       <div class="row">
