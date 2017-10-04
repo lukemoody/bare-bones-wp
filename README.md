@@ -1,12 +1,12 @@
 # README #
 
-This README documents the requirements for bare-bones boilerplate, created by Luke Moody (LMWD)
+This README documents the requirements for bare-bones-wp, created by Luke Moody (LMWD)
 
 ### What is this repository for? ###
 
-Boilerplate for bespoke front-end developments.
+Blank starter theme for bespoke WordPress developments with bare-bones boilerplate.
 
-* bare-bones
+* bare-bones-wp
 * Version 3.0.2
 * https://lukemoody.co.uk
 
