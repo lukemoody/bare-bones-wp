@@ -1,5 +1,5 @@
 <article <?php post_class() ?>>
-  <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+  <a href="<?php the_permalink() ?>"><h2><?php the_title(); ?></h2></a>
   <?php if ( has_post_thumbnail() ) : ?>
     <div class="post-thumb">
       <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
