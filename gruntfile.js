@@ -104,7 +104,8 @@ module.exports = function(grunt) {
                    ]
                },
                options: {
-                    proxy: "http://local.dev/", // Replace this with your local dev environment to work with BrowserSync local host
+                    // proxy: "http://local.dev/", // Replace this with your local dev environment to work with BrowserSync local host
+                    proxy: "http://wp-barebones-update-lm:8888/", // Replace this with your local dev environment to work with BrowserSync local host
                     watchTask: true,
                     // server: './'
                }
