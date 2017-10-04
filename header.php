@@ -7,6 +7,21 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title><?php wp_title(); ?> <?php bloginfo('name'); ?></title>
 
+    <link rel="icon" href="/wp-content/themes/bare-bones-wp/inc/assets/logo/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/wp-content/themes/bare-bones-wp/inc/assets/logo/favicon.png" type="image/x-icon" />
+
+    <script>
+    // https://browser-update.org/
+    var $buoop = {vs:{i:10,f:-4,o:-4,s:8,c:-4},api:4};
+    function $buo_f(){
+     var e = document.createElement("script");
+     e.src = "//browser-update.org/update.min.js";
+     document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+    </script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,20 +32,3 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-
-    <div class="container">
-      <div class="row">
-        <div class="grid-xs-12 grid-sm-12 grid-md-12">
-          <img src="<?php echo get_site_url(); ?>/wp-content/themes/bare-bones-wp/includes/assets/logo/logo.png" alt="Created by Luke Moody | Mooke Creative" width="100px" style="margin: 20px 0" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="grid-xs-12 grid-sm-6 grid-md-6">
-          <h1>Hello World</h1>
-          <p>Welcome to Fabric.</p>
-        </div>
-        <div class="grid-xs-12 grid-sm-6 grid-md-6">
-          <p>This is a default page.</p>
-        </div>
-      </div>
-    </div>
