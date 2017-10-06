@@ -11,7 +11,7 @@ var gulp           = require('gulp');
 
 // gulp-sass
 gulp.task('sass', function(){
-    return gulp.src('inc/scss/**/*.scss')
+  return gulp.src('inc/scss/**/*.scss')
     .pipe(sass())
     .pipe(gulp.dest('inc/css/src'))
     .pipe(prefix('last 2 versions'))
@@ -45,7 +45,7 @@ gulp.task('concat', function () {
 // browser-sync
 gulp.task('browserSync', function() {
   browserSync.init({
-    proxy: "http://wp-grunt-to-gulp-rebuild:8888/", // "http://local.dev/", // Replace this with your local dev environment to work with BrowserSync local host
+    proxy: "http://local.dev/", // Replace this with your local dev environment to work with BrowserSync local host
     watchTask: true,
   })
 });
