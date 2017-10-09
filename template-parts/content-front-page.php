@@ -6,3 +6,7 @@
     </div>
   </div>
 </section>
+
+<div class="">
+  <i class="fa fa-address-book" aria-hidden="true"></i>
+</div>

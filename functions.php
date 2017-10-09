@@ -1,5 +1,37 @@
 <?php
 /*
+ * Include Theme Wrapper
+ * Based on wrapper by Scribu
+ * @link http://scribu.net/wordpress/theme-wrappers.html
+ * /root.php
+ *
+ */
+
+// require_once( get_template_directory().'/lib/root-wrapper.php' );
+
+$bareBones_includes = [
+  'lib/root-wrapper.php',
+  'lib/metaboxes.php'
+];
+
+foreach ($bareBones_includes as $file) {
+  if (!$filepath = locate_template($file)) {
+    trigger_error(sprintf(__('Error locating %s for inclusion', 'bare-bones-wp'), $file), E_USER_ERROR);
+  }
+
+  require_once $filepath;
+}
+unset($file, $filepath);
+
+/*
+ * Include metaboxes
+ * Custom Post Types
+ *
+ */
+
+// require_once( get_template_directory().'/lib/metaboxes.php' );
+
+/*
  * Resgister and include Script
  * Stylesheet to Header and Footer
  *
@@ -9,13 +41,15 @@
 function register_load_scripts(){
   wp_register_script( 'scripts', get_template_directory_uri().'/dist/main.min.js','','', true );
   wp_enqueue_script( 'scripts' );
+
 }
 add_action( 'wp_enqueue_scripts', 'register_load_scripts'  );
 
 // Register Stylesheet
 function register_load_stylesheets(){
-  wp_register_style( 'fabric', get_template_directory_uri().'/dist/main.min.css', '', '', 'screen', false );
-  wp_enqueue_style( 'fabric' );
+  wp_register_style( 'styles', get_template_directory_uri().'/dist/main.min.css', '', '', 'screen', false );
+  wp_enqueue_style( 'styles' );
+
 }
 add_action( 'wp_enqueue_scripts', 'register_load_stylesheets'  );
 
@@ -57,11 +91,3 @@ add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
  */
 
 add_theme_support( 'post-thumbnails' );
-
-/*
- * Include metaboxes
- * Custom Post Types
- *
- */
-
-require_once( get_template_directory().'/lib/metaboxes.php' );

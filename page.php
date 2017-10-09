@@ -3,8 +3,6 @@
  * Default Page Template
  */
 
-get_header();
-
   if (have_posts()) :
   while (have_posts()) : the_post();
 
@@ -12,5 +10,3 @@ get_header();
 
   endwhile;
   endif;
-
-get_footer(); ?>
