@@ -1,9 +1,18 @@
-<?php get_header( root_template_base() ); ?>
+<?php
+/*
+ * Get header();
+ */
 
-  <section class="main">
-  	<?php include root_template_path(); ?>
-  </section>
+get_header( root_template_base() );
 
-  <!-- get_sidebar( root_template_base() ); -->
+/*
+ * Include page body content
+ */
 
-<?php get_footer( root_template_base() ); ?>
+include root_template_path();
+
+/*
+ * Get footer();
+ */
+
+get_footer( root_template_base() );

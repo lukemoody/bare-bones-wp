@@ -1,13 +1,9 @@
 <?php
 /*
- * Include Theme Wrapper
- * Based on wrapper by Scribu
- * @link http://scribu.net/wordpress/theme-wrappers.html
- * /root.php
+ * BareBones Includes
+ * The $bareBones_includes array determines the code library included into the site.
  *
  */
-
-// require_once( get_template_directory().'/lib/root-wrapper.php' );
 
 $bareBones_includes = [
   'lib/root-wrapper.php',
@@ -23,12 +19,7 @@ foreach ($bareBones_includes as $file) {
 }
 unset($file, $filepath);
 
-/*
- * Include metaboxes
- * Custom Post Types
- *
- */
-
+// require_once( get_template_directory().'/lib/root-wrapper.php' );
 // require_once( get_template_directory().'/lib/metaboxes.php' );
 
 /*
@@ -43,6 +34,7 @@ function register_load_scripts(){
   wp_enqueue_script( 'scripts' );
 
 }
+
 add_action( 'wp_enqueue_scripts', 'register_load_scripts'  );
 
 // Register Stylesheet
@@ -51,21 +43,24 @@ function register_load_stylesheets(){
   wp_enqueue_style( 'styles' );
 
 }
+
 add_action( 'wp_enqueue_scripts', 'register_load_stylesheets'  );
 
 /*
- * Register Menu Navigation
- *
+ * Register Navigation
+ * Main and Mobile menus registered
  */
 
 function register_main_nav() {
   register_nav_menu('main-nav',__( 'Main Nav' ));
 }
+
 add_action( 'init', 'register_main_nav' );
 
 function register_mobile_nav() {
   register_nav_menu('mobile-nav',__( 'Mobile Nav' ));
 }
+
 add_action( 'init', 'register_mobile_nav' );
 
 /*
@@ -75,7 +70,7 @@ add_action( 'init', 'register_mobile_nav' );
 
 function widgets_init() {
   register_sidebar([
-    'name'          => __('Primary', 'bare-bones-wp'),
+    'name'          => __('Primary Sidebar', 'bare-bones-wp'),
     'id'            => 'sidebar-primary',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
@@ -83,6 +78,7 @@ function widgets_init() {
     'after_title'   => '</h3>'
   ]);
 }
+
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
 
 /*

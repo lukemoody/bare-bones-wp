@@ -1,8 +1,11 @@
 <?php
-
-# License: Public Domain
-
-# I recommend replacing 'root_' with your own prefix.
+/*
+ * Include Theme Wrapper
+ * Based on wrapper by Scribu
+ * @link http://scribu.net/wordpress/theme-wrappers.html
+ * /root.php
+ *
+ */
 
 function root_template_path() {
 	return root_Wrapping::$main_template;
@@ -11,7 +14,6 @@ function root_template_path() {
 function root_template_base() {
 	return root_Wrapping::$base;
 }
-
 
 class root_Wrapping {
 
