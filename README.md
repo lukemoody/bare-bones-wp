@@ -51,7 +51,7 @@ Assuming that Gulp has been installed and the project has already been configure
 * Change to the project's root directory.
 * Install project dependencies with `npm install`
 * Run `bower install` to install Bower components
-* BrowserSync - If you’re already running a local server with PHP or similar, you’ll need to use the proxy mode. Open gulpfile.js and replace `http://local.dev/` with your local development url
+* BrowserSync - If you’re already running a local server with PHP or similar, you’ll need to use the proxy mode. Open gulpfile.json and replace `http://local.dev/` with your local development url
 * Run Gulp with `gulp watch`
 
 ### Who do I talk to? ###
