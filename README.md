@@ -7,7 +7,7 @@ This README documents the requirements for bare-bones, created by Luke Moody (LM
 Boilerplate for bespoke front-end developments.
 
 * bare-bones-wp
-* Version 4.0.1
+* Version 4.0.2
 * https://lukemoody.co.uk
 
 ### Structure ###
