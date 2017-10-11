@@ -40,7 +40,7 @@ themes/your-theme-name/   # → Theme root
 * Bower
 * Gulp
 * TweenMax
-* Font Awesome
+* FontAwesome v4.7.0
 * jQuery
 * Sass
 * BrowserSync
