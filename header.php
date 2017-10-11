@@ -7,8 +7,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title><?php wp_title(); ?> <?php bloginfo('name'); ?></title>
 
-    <link rel="icon" href="/wp-content/themes/bare-bones-wp/inc/assets/logo/favicon.png" type="image/x-icon" />
-    <link rel="shortcut icon" href="/wp-content/themes/bare-bones-wp/inc/assets/logo/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/inc/assets/logo/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/inc/assets/logo/favicon.png" type="image/x-icon" />
 
     <script>
     // https://browser-update.org/

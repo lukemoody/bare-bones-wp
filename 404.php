@@ -3,18 +3,13 @@
  * 404 Page Template
  *
  */
+?>
 
-get_header(); ?>
-
-  <div class="container">
-    <div class="row">
-      <div class="grid-xs-12 grid-sm-12 grid-md-12">
-
-        <h1>404. Page not found</h1>
-        <p><a href="<?php echo get_option('home'); ?>">Return to the homepage</a></p>
-
-      </div>
+<section class="container">
+  <div class="row">
+    <div class="grid-xs-12 grid-sm-12 grid-md-12">
+      <h1>404. Page not found</h1>
+      <p><a href="<?php echo get_option('home'); ?>">Return to the homepage</a></p>
     </div>
   </div>
-
-<?php get_footer(); ?>
+</section>
