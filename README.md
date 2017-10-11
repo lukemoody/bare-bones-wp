@@ -1,10 +1,10 @@
 # README #
 
-This README documents the requirements for bare-bones, created by Luke Moody (LMWD)
+This README documents the requirements for bare-bones-wp, created by Luke Moody (LMWD)
 
 ### What is this repository for? ###
 
-Boilerplate for bespoke front-end developments.
+Blank theme for bespoke WordPress developments with front-end boilerplate.
 
 * bare-bones-wp
 * Version 4.0.2
@@ -31,6 +31,7 @@ themes/your-theme-name/   # → Theme root
 ├── gulpfile.json         # → Manifest to define tasks
 ├── package.json          # → Node.js dependencies and scripts
 ├── style.css             # → Theme meta information
+└── ...
 ```
 
 ### What's being used? ###
@@ -44,9 +45,12 @@ themes/your-theme-name/   # → Theme root
 * Sass
 * BrowserSync
 
-### How to install? ###
+### Pre-install ###
 
-Assuming that Gulp has been installed and the project has already been configured with a package.json, bower.json and a gulpfile.json:
+* Copy bare-bones-wp files into your `theme` directory
+* Rename `bare-bones-wp` theme folder name to a project specific reference
+
+### How to install ###
 
 * Change to the project's root directory.
 * Install project dependencies with `npm install`
