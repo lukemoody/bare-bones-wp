@@ -15,19 +15,19 @@
   @import 'config/mixins';
 
   // Base
-  @import 'base/core';
-  @import 'base/buttons';
-  @import 'base/forms';
-  @import 'base/grid';
-  @import 'base/typography';
+  @import 'components/core';
+  @import 'components/buttons';
+  @import 'components/forms';
+  @import 'components/grid';
+  @import 'components/typography';
 
   // Components
-  @import 'components/header';
-  @import 'components/page';
-  @import 'components/footer';
+  @import 'layouts/header';
+  @import 'layouts/page';
+  @import 'layouts/footer';
 
   // Externals
-  @import 'external/font_awesome';
+  @import 'externals/font_awesome';
 
   // Responsive
-  @import 'components/responsive';
+  @import 'layouts/responsive';
