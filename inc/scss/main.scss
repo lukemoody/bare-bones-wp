@@ -3,7 +3,7 @@
 /*
  *
  * Bare Bones
- * Bare Bones v4.0.2
+ * Bare Bones v4.0.3
  * Created by Luke Moody ( https://lukemoody.co.uk )
  * Licensed under the MIT license ( https://opensource.org/licenses/MIT )
  *
@@ -24,10 +24,10 @@
   // Components
   @import 'components/header';
   @import 'components/page';
+  @import 'components/footer';
 
   // Externals
   @import 'external/font_awesome';
 
   // Responsive
-  @import 'components/responsive-max';
-  // @import 'components/responsive-min';
+  @import 'components/responsive';
