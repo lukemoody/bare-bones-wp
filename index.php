@@ -4,7 +4,7 @@
 */
 ?>
 
-<section class="container">
+<section class="container spacing">
   <div class="row">
     <div class="grid-xs-12 grid-sm-12 grid-md-12">
 
