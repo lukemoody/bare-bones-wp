@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container spacing">
   <div class="row">
     <article>
       <h1><?php the_title(); ?></h1>

@@ -7,8 +7,8 @@ This README documents the requirements for bare-bones-wp, created by Luke Moody 
 Blank theme for bespoke WordPress developments with front-end boilerplate.
 
 * bare-bones-wp
-* Version 4.0.3
-* https://lukemoody.co.uk
+* Version 4.0.4
+* https://www.lukemoody.co.uk
 
 ### Structure ###
 

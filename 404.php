@@ -5,7 +5,7 @@
  */
 ?>
 
-<section class="container">
+<section class="container spacing">
   <div class="row">
     <div class="grid-xs-12 grid-sm-12 grid-md-12">
       <h1>404. Page not found</h1>

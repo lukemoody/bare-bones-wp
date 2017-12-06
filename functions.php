@@ -3,11 +3,16 @@
  * BareBones Includes
  * The $bareBones_includes array determines the code library included into the site.
  *
+ * funtions.php - WP specific config
+ * root-wrapper.php - Theme wrapper config
+ * extras.php - Additional functions
+ * optimisation.php - Optimisation functions
  */
 
 $bareBones_includes = [
   'lib/root-wrapper.php',
-  'lib/metaboxes.php'
+  'lib/extras.php',
+  'lib/optimisation.php'
 ];
 
 foreach ($bareBones_includes as $file) {
@@ -18,9 +23,6 @@ foreach ($bareBones_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
-
-// require_once( get_template_directory().'/lib/root-wrapper.php' );
-// require_once( get_template_directory().'/lib/metaboxes.php' );
 
 /*
  * Resgister and include Script
@@ -74,8 +76,8 @@ function widgets_init() {
     'id'            => 'sidebar-primary',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'before_title'  => '<h5>',
+    'after_title'   => '</h5>'
   ]);
 }
 
