@@ -18,7 +18,7 @@ var gulp           = require('gulp');
  */
 
 gulp.task('sass', function(){
-  return gulp.src('inc/scss/**/*.scss')
+  gulp.src('inc/scss/**/*.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(gulp.dest('inc/css/src'))
