@@ -61,7 +61,7 @@ gulp.task('concat', function () {
 
 gulp.task('browserSync', function() {
   browserSync.init({
-    proxy: "http://local.dev", // Replace this with your local dev environment to work with BrowserSync local host
+    proxy: "http://local-bare-bones-wp:8888/", // "http://local.dev", // Replace this with your local dev environment to work with BrowserSync local host
     watchTask: true,
   })
 });
