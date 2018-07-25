@@ -32,7 +32,6 @@
   @media only screen and ( $media-max : $grid-breakpoint-3 ) {
     margin-left: 0;
     margin-right: 0;
-    @content;
   }
 }
 
