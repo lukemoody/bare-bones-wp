@@ -11,6 +11,7 @@ var gulp           = require('gulp');
     sass           = require('gulp-sass');
     mainBowerFiles = require('main-bower-files');
     watch          = require('gulp-watch');
+    plumber        = require('gulp-plumber');
 
 /*
  * gulp-sass
@@ -18,6 +19,7 @@ var gulp           = require('gulp');
 
 gulp.task('sass', function(){
   return gulp.src('inc/scss/**/*.scss')
+    .pipe(plumber())
     .pipe(sass())
     .pipe(gulp.dest('inc/css/src'))
     .pipe(prefix('last 2 versions'))
@@ -51,6 +53,7 @@ gulp.task('concat', function () {
 
   gulp.src(['inc/js/libs/*.js' , 'inc/js/*.js'])
     .pipe(concat('main.min.js'))
+    .pipe(plumber())
     .pipe(uglify())
     .pipe(gulp.dest('dist')); // dist/main.min.js
 });

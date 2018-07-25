@@ -67,18 +67,55 @@ add_action( 'init', 'register_mobile_nav' );
 
 /*
  * Register Sidebars
- *
  */
 
 function widgets_init() {
-  register_sidebar([
-    'name'          => __('Primary Sidebar', 'bare-bones-wp'),
+
+  register_sidebar(array(
+    'name'          => __('Footer Column One', 'seventy7-blank-wp'),
+    'id'            => 'footer-col-one',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h5>',
+    'after_title'   => '</h5>'
+  ));
+
+  register_sidebar(array(
+    'name'          => __('Footer Column Two', 'seventy7-blank-wp'),
+    'id'            => 'footer-col-two',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h5>',
+    'after_title'   => '</h5>'
+  ));
+
+  register_sidebar(array(
+    'name'          => __('Footer Column Three', 'seventy7-blank-wp'),
+    'id'            => 'footer-col-three',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h5>',
+    'after_title'   => '</h5>'
+  ));
+
+  register_sidebar(array(
+    'name'          => __('Footer Column Four', 'seventy7-blank-wp'),
+    'id'            => 'footer-col-four',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h5>',
+    'after_title'   => '</h5>'
+  ));
+
+  register_sidebar(array(
+    'name'          => __('Primary Sidebar', 'seventy7-blank-wp'),
     'id'            => 'sidebar-primary',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h5>',
     'after_title'   => '</h5>'
-  ]);
+  ));
+
 }
 
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
