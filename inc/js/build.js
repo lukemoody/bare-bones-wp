@@ -24,7 +24,7 @@
 
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.
-  var bareBones = {
+  var seventy7Blank = {
     // All pages
     'common': {
       init: function() {
@@ -57,7 +57,7 @@
   var UTIL = {
     fire: function(func, funcname, args) {
       var fire;
-      var namespace = bareBones;
+      var namespace = seventy7Blank;
       funcname = (funcname === undefined) ? 'init' : funcname;
       fire = func !== '';
       fire = fire && namespace[func];
