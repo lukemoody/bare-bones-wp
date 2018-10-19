@@ -2,19 +2,35 @@
 
 This README documents the requirements for bare-bones-wp, created by Luke Moody (LMWD)
 
-### What is this repository for? ###
-
-Blank theme for bespoke WordPress developments with front-end boilerplate.
+Blank scaffold theme for bespoke WordPress developments with front-end boilerplate. Write stylesheets with Sass, automatically check your JavaScript for errors, enable synchronized browser testing, and more with a Gulp based setup.
 
 * bare-bones-wp
-* Version 4.0.4
+* Version 5.0.1
 * https://www.lukemoody.co.uk
+
+### Features ###
+
+* Modern JavaScript
+* Sass for stylesheets
+* Gulp
+* BrowserSync
+* TweenMax
+* jQuery
+* FontAwesome v4.7.0
+
+### Requirements ###
+
+Ensure all dependencies have bene installed:
+
+* WordPress >= 4.7
+* PHP >= 7.1.3
+* Node.js >= 6.9.x
+* Yarn
 
 ### Structure ###
 
 ```shell
 themes/your-theme-name/   # → Theme root
-├── bower_components/     # → Bower packages (never edit)
 ├── dist/                 # → Built assets (never edit)
 ├── inc/                  # → Includes folder
 │   ├── assets/           # → Images, logo, icons etc
@@ -26,24 +42,12 @@ themes/your-theme-name/   # → Theme root
 ├── node_modules/         # → Node.js packages (never edit)
 ├── template-parts/       # → WP specific content layout templates
 ├── .gitignore            # → Directories, files, or patterns you don't want to be tracked by version control
-├── bower.json            # → Manifest to define tasks
 ├── functions.php         # → Includes and WP functions
 ├── gulpfile.json         # → Manifest to define tasks
 ├── package.json          # → Node.js dependencies and scripts
 ├── style.css             # → Theme meta information
 └── ...
 ```
-
-### What's being used? ###
-
-* Node.js
-* Bower
-* Gulp
-* TweenMax
-* FontAwesome v4.7.0
-* jQuery
-* Sass
-* BrowserSync
 
 ### Pre-install ###
 
@@ -53,8 +57,7 @@ themes/your-theme-name/   # → Theme root
 ### How to install ###
 
 * Change to the project's root directory.
-* Install project dependencies with `npm install`
-* Run `bower install` to install Bower components
+* Install project dependencies with `yarn`
 * BrowserSync - If you’re already running a local server with PHP or similar, you’ll need to use the proxy mode. Open gulpfile.json and replace `http://local.dev/` with your local development url
 * Run Gulp with `gulp watch`
 
